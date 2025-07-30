@@ -2,7 +2,7 @@
 
 A lightweight alternative to Roblox's `BindableEvent` and `BindableFunction`, offering better performance and a cleaner API.
 
-This system is based on the [GoodSignal](https://gist.github.com/stravant/b75a322e0919d60dde8a0316d1f09d2f) implementation by [stravant](https://gist.github.com/stravant), with enhancements for typed Context-based access and session-safe invocation.
+This system is totally based on the [GoodSignal](https://gist.github.com/stravant/b75a322e0919d60dde8a0316d1f09d2f) implementation by [stravant](https://gist.github.com/stravant), with enhancements for typed Context-based access and session-safe invocation.
 
 ---
 
