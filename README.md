@@ -58,3 +58,24 @@ Central manager that creates and caches named Events/Functions.
 - `GetAllFunctions()`: Returns a dictionary of all created `Functions`.
 - `GetAllEvents()`: Returns a dictionary of all created `Events`.
 - `GetAll()`: Returns a list with all `Functions` and `Events`.
+
+---
+
+## 💡 Typical usage
+
+```lua
+local fn = ContextSignal.GetFunction("MyFunction")
+fn.OnInvoke = function()
+  return "Hello World"
+end
+	  
+local result = fn:Invoke()
+print(result)
+
+local ev = ContextSignal.GetEvent("MyEvent")
+local conn = ev:Connect(function(...)
+  print(...)
+end)
+	  
+ev:Fire("Hello World")
+```
