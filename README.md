@@ -6,14 +6,14 @@ This system is based on the **GoodSignal** implementation by [stravant](https://
 
 ---
 
-## 📊 Benchmark Comparison
+## 📊 Benchmark Comparison (Client, 1000 Calls)
 
-| Type      | System              | Avg Latency (s) | Calls | Context  |
-|-----------|---------------------|------------------|--------|----------|
-| 🔁 Event  | BindableEvent       | `0.01063`        | 1000   | Client   |
-| 🔁 Event  | ContextSignal       | `0.00694`        | 1000   | Client   |
-| 🔧 Function | BindableFunction  | `0.00000`        | 1000   | Client   |
-| 🔧 Function | ContextSignal     | `0.00000`        | 1000   | Client   |
+| Type       | System            | Avg Latency (s) |
+|------------|-------------------|-----------------|
+| 🔁 Event   | BindableEvent     | `0.01063`       |
+| 🔁 Event   | ContextSignal     | `0.00694`       |
+| 🔧 Function| BindableFunction  | `0.00000`       |
+| 🔧 Function| ContextSignal     | `0.00000`       |
 
 ### ✅ Notes:
 - `ContextSignal` events are ~34% faster than `BindableEvent` based on average latency.
